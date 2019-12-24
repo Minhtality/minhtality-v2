@@ -1,16 +1,19 @@
 import React from 'react';
 import Styled from './index.styled';
+import { useMobileBreakpoint } from '../breakpoints';
 
-const NavBar = () => {
+const NavBar = ({ links }) => {
   return (
-    <Styled.NavWrapper>
-      <Styled.NavContainer>
-        <li>Home</li>
-        <li>Project</li>
-        <li>Gallery</li>
-        <li>Resume</li>
-      </Styled.NavContainer>
-    </Styled.NavWrapper>
+    <Styled.NavigationBar>
+      <Styled.NavLogo>Minh M. Tran</Styled.NavLogo>
+      <Styled.NavLinks>
+        {links.map(link => (
+          <li>
+            <a href='#!'>{link}</a>
+          </li>
+        ))}
+      </Styled.NavLinks>
+    </Styled.NavigationBar>
   );
 };
 
