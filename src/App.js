@@ -7,7 +7,7 @@ import { NavData } from './_mocks';
 function App() {
   return (
     <div className='App'>
-      <NavBar {...NavData} />
+      {/* <NavBar {...NavData} /> */}
       {/* <HeroSection /> */}
     </div>
   );
