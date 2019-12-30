@@ -9,7 +9,7 @@ const NavBar = ({ links }) => {
       <Styled.NavLinks>
         {links.map(link => (
           <li>
-            <a href='#!'>{link}</a>
+            <a href="#!">{link}</a>
           </li>
         ))}
       </Styled.NavLinks>
