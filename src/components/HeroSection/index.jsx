@@ -7,36 +7,64 @@ const HeroSection = () => {
       <Styled.Container>
         <Carousel>
           <img
-            src="https://images.unsplash.com/photo-1577578306649-09e937512e28?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
-            alt="1"
+            className='img'
+            src='https://source.unsplash.com/collection/{COLLECTION 1}/1800x1800'
+            alt='image1'
           />
           <img
-            src="https://images.unsplash.com/photo-1577578306649-09e937512e28?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
-            alt="2"
+            className='img'
+            src='https://source.unsplash.com/collection/{COLLECTION 2}/1800x1800'
+            alt='image2'
           />
           <img
-            src="https://images.unsplash.com/photo-1577578306649-09e937512e28?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
-            alt="3"
+            className='img'
+            src='https://source.unsplash.com/collection/{COLLECTION 3}/1800x1800'
+            alt='image3'
           />
           <img
-            src="https://images.unsplash.com/photo-1577578306649-09e937512e28?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
-            alt="4"
+            className='img'
+            src='https://source.unsplash.com/collection/{COLLECTION 4}/1800x1800'
+            alt='image4'
           />
           <img
-            src="https://images.unsplash.com/photo-1577578306649-09e937512e28?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
-            alt="5"
+            className='img'
+            src='https://source.unsplash.com/collection/{COLLECTION 5}/1800x1800'
+            alt='image5'
           />
           <img
-            src="https://images.unsplash.com/photo-1577578306649-09e937512e28?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
-            alt="6"
+            className='img'
+            src='https://source.unsplash.com/collection/{COLLECTION 6}/1800x1800'
+            alt='image6'
           />
           <img
-            src="https://images.unsplash.com/photo-1577578306649-09e937512e28?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
-            alt="7"
+            className='img'
+            src='https://source.unsplash.com/collection/{COLLECTION 7}/1800x1800'
+            alt='image7'
           />
           <img
-            src="https://images.unsplash.com/photo-1577578306649-09e937512e28?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
-            alt="8"
+            className='img'
+            src='https://source.unsplash.com/collection/{COLLECTION 8}/1800x1800'
+            alt='image8'
+          />
+          <img
+            className='img'
+            src='https://source.unsplash.com/collection/{COLLECTION 9}/1800x1800'
+            alt='image9'
+          />
+          <img
+            className='img'
+            src='https://source.unsplash.com/collection/{COLLECTION 10}/1800x1800'
+            alt='image10'
+          />
+          <img
+            className='img'
+            src='https://source.unsplash.com/collection/{COLLECTION 11}/1800x1800'
+            alt='image11'
+          />
+          <img
+            className='img'
+            src='https://source.unsplash.com/collection/{COLLECTION 14}/1800x1800'
+            alt='image12'
           />
         </Carousel>
       </Styled.Container>

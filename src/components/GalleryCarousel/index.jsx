@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Styled from './index.styled';
+import RightArrow from '../ActionIcons/RightArrow';
+import LeftArrow from '../ActionIcons/LeftArrow';
 
 const Carousel = ({ children }) => {
   const [displayImage, setDisplayImage] = useState(false);
@@ -10,16 +12,27 @@ const Carousel = ({ children }) => {
     setDisplayImage(!displayImage);
     setActiveIndex(index);
   };
-  // When clicked in overlay zone, toggle modal off
-  const exitModal = event => {
-    event.stopPropagation();
-    setDisplayImage(!displayImage);
+
+  const nextSlide = event => {
+    setActiveIndex(activeIndex + 1);
+
+    if (event.key === 'ArrowRight') {
+      setActiveIndex(activeIndex + 1);
+    }
   };
+  const prevSlide = () => {
+    setActiveIndex(activeIndex - 1);
+  };
+
+  // When clicked in overlay zone, toggle modal off
+
   return (
     <>
       {displayImage && (
-        <Styled.ModalOverlay onClick={exitModal}>
+        <Styled.ModalOverlay onKeyPress={nextSlide}>
           <Styled.ModalContent>
+            <RightArrow nextSlide={nextSlide} />
+            <LeftArrow prevSlide={prevSlide} />
             <span>{children[activeIndex]}</span>{' '}
           </Styled.ModalContent>
         </Styled.ModalOverlay>
