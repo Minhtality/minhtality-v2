@@ -1,15 +1,21 @@
 import styled from 'styled-components';
 
 export default {
+  NavContainer: styled.div`
+    width: ${props => (props.fullWidth ? '100%' : '80%')};
+    margin: 0 auto;
+  `,
   NavigationBar: styled.div`
     display: flex;
-    padding: 35px 10%;
+    ${props =>
+      props.theme === 'dark'
+        ? 'background: #333;color:#fff'
+        : 'background: #fff; color: #333'}
   `,
   NavLogo: styled.div`
     flex: 1;
     font-size: 20px;
     position: relative;
-    color: #333;
   `,
   NavLinks: styled.div`
     display: flex;
