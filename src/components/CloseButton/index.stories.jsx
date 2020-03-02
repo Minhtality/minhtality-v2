@@ -5,7 +5,7 @@ import CloseButton from './';
 
 storiesOf('Close Button',module)
     .add('Default', () => (
-     <div style={{background: '#f9f9f9'}}>
+     <div style={{background: '#34465d'}}>
          <p>PrimaryBlack</p>
          <CloseButton theme="PrimaryBlack" />
          <p>Secondary Black</p>
