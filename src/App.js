@@ -1,15 +1,11 @@
-import React from 'react';
-import HeroSection from './components/HeroSection';
-import './App.css';
-import NavBar from './components/NavBar';
-import { NavData } from './_mocks';
+import React from 'react'
 
-function App() {
+const App = () => {
   return (
-    <div className='App'>
-      <NavBar {...NavData} />
+    <div>
+      
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
