@@ -6,16 +6,10 @@ const HeroSection = () => {
         <>
             <Styled.NavContainer>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>3</li>
                 </ul>
             </Styled.NavContainer>
             <Styled.HeroContainer>
@@ -23,8 +17,6 @@ const HeroSection = () => {
                 <section className='item type-b'></section>
                 <section className='item type-b'></section>
                 <Styled.InnerContainer className='item'>
-                    <section className='item-inner'></section>
-                    <section className='item-inner'></section>
                     <section className='item-inner'></section>
                     <section className='item-inner'></section>
                     <section className='item-inner'></section>
