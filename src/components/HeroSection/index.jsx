@@ -5,21 +5,21 @@ const HeroSection = () => {
     return (
         <>
             <Styled.NavContainer>
-                <ul>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>3</li>
-                </ul>
+                <Styled.NavList>
+                    <Styled.NavItems>1</Styled.NavItems>
+                    <Styled.NavItems>2</Styled.NavItems>
+                    <Styled.NavItems>3</Styled.NavItems>
+                    <Styled.NavItems>4</Styled.NavItems>
+                </Styled.NavList>
             </Styled.NavContainer>
             <Styled.HeroContainer>
-                <section className='item type-a'></section>
-                <section className='item type-b'></section>
-                <section className='item type-b'></section>
-                <Styled.InnerContainer className='item'>
-                    <section className='item-inner'></section>
-                    <section className='item-inner'></section>
-                    <section className='item-inner'></section>
+                <Styled.MainContainer></Styled.MainContainer>
+                <Styled.SplitContainer></Styled.SplitContainer>
+                <Styled.SplitContainer></Styled.SplitContainer>
+                <Styled.InnerContainer>
+                    <Styled.InnerContent></Styled.InnerContent>
+                    <Styled.InnerContent></Styled.InnerContent>
+                    <Styled.InnerContent></Styled.InnerContent>
                 </Styled.InnerContainer>
             </Styled.HeroContainer>
         </>
