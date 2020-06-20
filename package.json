@@ -1,11 +1,14 @@
 {
-  "name": "minhtality-final",
+  "name": "minhtality-server",
   "version": "1.0.0",
   "description": "Minhtality full stack application",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "client-install": "npm install --prefix client",
+    "dev": "concurently \"npm run server\" \"npm run client\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -25,7 +28,9 @@
     "express": "^4.17.1",
     "express-validator": "^6.5.0",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.9.15"
+    "mongoose": "^5.9.15",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   },
   "devDependencies": {
     "concurrently": "^5.2.0",
