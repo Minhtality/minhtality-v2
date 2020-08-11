@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types';
 import Styled from './index.styled';
-import {CodeSlash} from 'css.gg';
+import {Link} from 'react-router-dom';
 
 const PageNavigation = ({
     title = 'Home',
@@ -15,15 +15,15 @@ const PageNavigation = ({
                     <Styled.Title>Minh</Styled.Title>
                     <Styled.Links>
                         <li>
-                            <a href="/">Home</a>
+                            <Link to="/">Home</Link>
                         </li>
                         <li>
-                            <a href="/about">About</a>
+                            <Link to="/about">About</Link>
                         </li>
                     </Styled.Links>
                 </Styled.LeftSection>
                 <Styled.RightSection>
-                    <div><a href="/login">Login</a></div>
+                    <div><Link to="/login">Login</Link></div>
                 </Styled.RightSection>
             </Styled.NavContainer>
         </Styled.PageNavigation>
