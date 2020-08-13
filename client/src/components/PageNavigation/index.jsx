@@ -8,6 +8,7 @@ const PageNavigation = ({
     theme = 'LightMode',
     icon
 }) => {
+
     return (
         <Styled.PageNavigation>
             <Styled.NavContainer>
@@ -19,6 +20,9 @@ const PageNavigation = ({
                         </li>
                         <li>
                             <Link to="/about">About</Link>
+                        </li>
+                        <li>
+                            <Link to="/contacts">Contacts</Link>
                         </li>
                     </Styled.Links>
                 </Styled.LeftSection>
