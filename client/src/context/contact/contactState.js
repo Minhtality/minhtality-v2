@@ -34,7 +34,7 @@ const ContactState = ({children}) => {
             },
             {
                 id: 3,
-                name: 'Adamn Smith',
+                name: 'Adam Smith',
                 email: 'Adam@smith.com',
                 phone: '111-111-3333',
                 type: 'personal'
