@@ -1,6 +1,7 @@
 import React, {useContext} from 'react';
 import ContactContext from '../../context/contact/contactContext';
 import Styled from './index.styled';
+import Button from '../Button';
 
 const Contacts = ({
     name,
@@ -15,6 +16,9 @@ const Contacts = ({
         <div>{phone}</div>
         <div>{email}</div>
         <div>{type}</div>
+        <Button >Add</Button>
+        <Button theme='EditButton'>Edit1</Button>
+        <Button theme='DeleteButton'>Add1</Button>
         </Styled.Card>
     )
 }

@@ -15,7 +15,9 @@ export default {
     `,
     Card: styled.div`
         display: flex;
+        min-height: 50px;
         border: 1px solid #333;
         box-sizing: border-box;
+        align-items: center;
     `,
 }
