@@ -3,10 +3,11 @@ import Styled from './index.styled';
 
 const Button = ({
     theme,
-    children
+    children,
+    onClick = () => {},
 }) => {
     return (
-        <Styled.Button theme={theme}>
+        <Styled.Button onClick={onClick} theme={theme}>
             {children}
         </Styled.Button>
     )
