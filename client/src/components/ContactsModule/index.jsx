@@ -23,7 +23,7 @@ const Contacts = ({
         <div>{phone}</div>
         <div>{email}</div>
         <div>{type.charAt(0).toUpperCase()}{type.slice(1)}</div>
-        <Button >Add</Button>
+        <Button theme='AddButton'>ADD</Button>
         <Button theme='EditButton'>Edit1</Button>
         <Button theme='DeleteButton' onClick={handleDelete}>Delete</Button>
         </Styled.Card>
@@ -39,11 +39,11 @@ const ContactsModule = () => {
             <Styled.MoreInfo>
                 <ContactForm/>
             </Styled.MoreInfo>
-            <Styled.Contacts>
+            <Styled.ContactsContainer>
                 {contacts.map(contact => (
                     <Contacts {...contact} />
                 ))}
-            </Styled.Contacts>
+            </Styled.ContactsContainer>
         </Styled.ContactModule>
     )
 }

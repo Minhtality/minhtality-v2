@@ -5,19 +5,21 @@ export default {
         display: flex;
         justify-content: space-between;
         max-width: 1440px;
+        padding: 0 65px;
         margin: 0 auto;
     `,
     MoreInfo: styled.div`
-        width: 50%;
+        width: 70%;
     `,
-    Contacts: styled.div`
-        width: 50%;
+    ContactsContainer: styled.div`
+        width: 30%;
     `,
     Card: styled.div`
-        display: flex;
-        min-height: 50px;
+        width: 100%;
+        text-align: center;
         border: 1px solid #333;
         box-sizing: border-box;
         align-items: center;
+        margin-bottom: 10px;
     `,
 }

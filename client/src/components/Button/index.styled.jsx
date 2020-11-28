@@ -4,41 +4,48 @@ export const buttonStyle = {
     default: css`
         color: rgba(0, 0, 0, 0.87);
         border: 2px solid transparent;
-        background-color: #e0e0e0;
+        background: #e0e0e0;
     `,
     AddButton: css`
         color: #FFF;
         border: 2px solid transparent;
-        background: green;
+        background: #39603D;
     `,
     EditButton: css`
         color: #FFF;
         border: 2px solid transparent;
-        background: orange;
+        background: #F1B24A;
     `,
     DeleteButton: css`
         color: #FFF;
         border: 2px solid transparent;
-        background: red;
+        background: #932432;
     `,
-    PrimaryBlack: css``,
-    PrimaryWhite: css``,
+    Primary: css`
+        color: #3C403D;
+        border: 2px solid #3C403D;
+        background: transparent;
+    `,
+    Secondary: css`
+        color: #FFFFFF;
+        border: 2px solid #3C403D;
+    `,
 
 };
 
 export default {
     Button: styled.button`
-        border-radius: 4px;
         box-sizing: border-box;
         text-decoration: none;
         min-width: 100px;
-        padding: 0 30px;
+        padding: 0 20px;
         height: 30px;
         display: inline-flex;
         align-items: center;
         justify-content: center;
         margin: 0 10px;
         cursor: pointer;
+        margin-bottom: 15px;
         -moz-appearance: none;
         -webkit-appearance: none;
         ${props => buttonStyle[props.theme] || buttonStyle['default']}
