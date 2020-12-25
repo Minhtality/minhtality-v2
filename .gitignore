@@ -9,8 +9,8 @@ config/
 /client/.env.development.local
 /client/.env.test.local
 /client/.env.production.local
+/client/.vscode
 .DS_Store
-.vscode
 
 npm-debug.log*
 yarn-debug.log*
