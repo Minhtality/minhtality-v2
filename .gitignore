@@ -9,7 +9,7 @@ config/
 /client/.env.development.local
 /client/.env.test.local
 /client/.env.production.local
-/client/.vscode
+.vscode
 .DS_Store
 
 npm-debug.log*
