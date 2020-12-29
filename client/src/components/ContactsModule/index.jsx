@@ -4,17 +4,21 @@ import Styled from './index.styled';
 import Button from '../Button';
 import ContactForm from './ContactForm';
 
-const Contacts = ({
-    id,
-    name,
-    phone,
-    email,
-    type
-}) => {
+const Contacts = ( props ) => {
+    const { id, name, phone, email, type } = props;
+
     const contactContext = useContext(ContactContext);
-    const {deleteContact} = contactContext;
+    const { deleteContact, setCurrent, clearCurrent } = contactContext;
+     
+    const handleBlur = () => {
+    }
+    const handleCurrent = () => {
+        setCurrent(props);
+    };
+
     const handleDelete = () => {
         deleteContact(id);
+        clearCurrent();
     };
 
     return (
@@ -24,7 +28,7 @@ const Contacts = ({
         <div>{email}</div>
         <div>{type.charAt(0).toUpperCase()}{type.slice(1)}</div>
         <Button theme='AddButton'>ADD</Button>
-        <Button theme='EditButton'>Edit1</Button>
+        <Button theme='EditButton' onClick={handleCurrent}>Edit1</Button>
         <Button theme='DeleteButton' onClick={handleDelete}>Delete</Button>
         </Styled.Card>
     )
@@ -37,11 +41,11 @@ const ContactsModule = () => {
     return (
         <Styled.ContactModule>
             <Styled.MoreInfo>
-                <ContactForm/>
+                <ContactForm />
             </Styled.MoreInfo>
             <Styled.ContactsContainer>
                 {contacts.map(contact => (
-                    <Contacts {...contact} />
+                    <Contacts key={contact.id} {...contact} />
                 ))}
             </Styled.ContactsContainer>
         </Styled.ContactModule>

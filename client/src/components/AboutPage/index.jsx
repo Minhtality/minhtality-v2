@@ -27,9 +27,6 @@ const AboutPage = () => {
         e.preventDefault();
         getPokemon(pokemon.name);
     }
-    // useEffect(() => {
-    //     getPokemon('ditto');
-    // },[]); 
 
     return (
         <div>
