@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types';
 import Styled from './index.styled';
-import {Link} from 'react-router-dom';
+import styled from 'styled-components';
 
 const PageNavigation = ({
     title = 'Home',
@@ -21,21 +21,21 @@ const PageNavigation = ({
                     <Styled.Title>Minh</Styled.Title>
                     <Styled.Links>
                         <li>
-                            <Link to="/">Home</Link>
+                            <Styled.Link to="/">Home</Styled.Link>
                         </li>
-                        <div onClick={toggleDropdown}>
+                        <Styled.Dropdown onClick={toggleDropdown}>
                             <li>Projects</li>
                             {showDropdown && 
-                                <div>
-                                    <Link to="/pokemon">Pokemon</Link>
-                                    <Link to="/contacts">Contacts</Link>
-                                </div>
+                                <Styled.DropdownList>
+                                    <Styled.Link to="/pokemon">Pokemon</Styled.Link>
+                                    <Styled.Link to="/contacts">Contacts</Styled.Link>
+                                </Styled.DropdownList>
                             }
-                        </div>
+                        </Styled.Dropdown>
                     </Styled.Links>
                 </Styled.LeftSection>
                 <Styled.RightSection>
-                    <div><Link to="/login">Login</Link></div>
+                    <div><Styled.Link to="/login">Login</Styled.Link></div>
                 </Styled.RightSection>
             </Styled.NavContainer>
         </Styled.PageNavigation>

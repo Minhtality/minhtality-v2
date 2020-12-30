@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export default {
     PageNavigation: styled.div`
@@ -25,6 +26,21 @@ export default {
         align-items: center;
         display: flex;
     `,
+    Dropdown: styled.div`
+        position: relative;
+        cursor: pointer;
+    `,
+    DropdownList: styled.div`
+        position: absolute;
+        inset: 0px auto auto 0px;
+        transform: translate(0px, 25px);
+        background-color: #fff;
+        border: 1px solid black;
+        border-radius: .25rem;
+        a {
+            display: block;
+        }
+    `,
     Title: styled.h2`
         box-sizing: border-box;
         display: inline-block;
@@ -34,8 +50,12 @@ export default {
     Links: styled.ul`
         display: flex;
         list-style: none;
-        li {
+        li, div {
             margin-right: 25px;
         }
+    `,
+    Link: styled(Link)`
+        text-decoration: none;
+        color: #000;
     `,
 }
