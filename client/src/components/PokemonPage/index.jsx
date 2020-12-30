@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const AboutPage = () => {
+const Pokemon = () => {
     const [pageData, setPageData] = useState(undefined);
     const [pokemon, setPokemon] = useState({
         name: '',
@@ -40,4 +40,4 @@ const AboutPage = () => {
     )
 }
 
-export default AboutPage;
+export default Pokemon;

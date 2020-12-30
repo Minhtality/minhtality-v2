@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types';
 import Styled from './index.styled';
 import {Link} from 'react-router-dom';
@@ -9,6 +9,11 @@ const PageNavigation = ({
     icon
 }) => {
 
+    const [showDropdown, setDropdown] =  useState(false);
+    const toggleDropdown = () => {
+        setDropdown(!showDropdown);
+    };
+
     return (
         <Styled.PageNavigation>
             <Styled.NavContainer>
@@ -18,12 +23,15 @@ const PageNavigation = ({
                         <li>
                             <Link to="/">Home</Link>
                         </li>
-                        <li>
-                            <Link to="/about">About</Link>
-                        </li>
-                        <li>
-                            <Link to="/contacts">Contacts</Link>
-                        </li>
+                        <div onClick={toggleDropdown}>
+                            <li>Projects</li>
+                            {showDropdown && 
+                                <div>
+                                    <Link to="/pokemon">Pokemon</Link>
+                                    <Link to="/contacts">Contacts</Link>
+                                </div>
+                            }
+                        </div>
                     </Styled.Links>
                 </Styled.LeftSection>
                 <Styled.RightSection>

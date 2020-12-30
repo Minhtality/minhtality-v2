@@ -3,6 +3,7 @@ import ContactContext from '../../context/contact/contactContext';
 import Styled from './index.styled';
 import Button from '../Button';
 import ContactForm from './ContactForm';
+import {formatPhone} from '../helpers';
 
 const Contacts = ( props ) => {
     const { id, name, phone, email, type } = props;
@@ -24,7 +25,7 @@ const Contacts = ( props ) => {
     return (
         <Styled.Card>
         <div>{name}</div>
-        <div>{phone}</div>
+        <div>{formatPhone(phone)}</div>
         <div>{email}</div>
         <div>{type.charAt(0).toUpperCase()}{type.slice(1)}</div>
         <Button theme='AddButton'>ADD</Button>

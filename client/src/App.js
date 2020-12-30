@@ -4,7 +4,7 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import ContactState from './context/contact/contactState';
 import PageNavigation from '../src/components/PageNavigation';
 import HomepageHero from './components/HomepageHero';
-import AboutPage from './components/AboutPage';
+import PokemonPage from './components/PokemonPage';
 import LoginPage from './components/LoginPage';
 import ContactsModule from './components/ContactsModule';
 
@@ -20,7 +20,7 @@ function App() {
             {/* Page container */}
             <Switch>
               <Route exact path='/' component={HomepageHero} />
-              <Route exact path='/about' component={AboutPage} />
+              <Route exact path='/pokemon' component={PokemonPage} />
               <Route exact path='/login' component={LoginPage} />
               <Route exact path='/contacts' component={ContactsModule} />
             </Switch>
