@@ -8,6 +8,12 @@ export default {
         margin-bottom: 45px;
         box-sizing: border-box;
     `,
+    DesktopNav: styled.div`
+        position: relative;
+        border-bottom: #999 solid 1px;
+        margin-bottom: 45px;
+        box-sizing: border-box;
+    `,
     NavContainer: styled.div`
         position: relative;
         display: flex;

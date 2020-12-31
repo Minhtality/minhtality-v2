@@ -11,8 +11,8 @@ const Contacts = ( props ) => {
     const contactContext = useContext(ContactContext);
     const { deleteContact, setCurrent, clearCurrent } = contactContext;
      
-    const handleBlur = () => {
-    }
+    // const handleBlur = () => {
+    // }
     const handleCurrent = () => {
         setCurrent(props);
     };
