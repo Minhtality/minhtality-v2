@@ -25,11 +25,14 @@ export default {
         align-items: center;
         display: flex;
     `,
-    Title: styled.h2`
+    Title: styled.a`
         box-sizing: border-box;
         display: inline-block;
         margin: 0;
         padding-right: 30px;
+        cursor: pointer;
+        text-decoration: none;
+        color: inherit;
     `,
     Links: styled.ul`
         display: flex;

@@ -18,12 +18,12 @@ const PageNavigation = ({
         <Styled.PageNavigation>
             <Styled.NavContainer>
                 <Styled.LeftSection>
-                    <Styled.Title>Minh</Styled.Title>
+                    <Styled.Title href='/' target="_self">Minh</Styled.Title>
                     <Styled.Links>
-                        <li>
+                        {/* <li>
                             <Link to="/">Home</Link>
-                        </li>
-                        <div onClick={toggleDropdown}>
+                        </li> */}
+                        {/* <div onClick={toggleDropdown}>
                             <li>Projects</li>
                             {showDropdown && 
                                 <div>
@@ -31,12 +31,12 @@ const PageNavigation = ({
                                     <Link to="/contacts">Contacts</Link>
                                 </div>
                             }
-                        </div>
+                        </div> */}
                     </Styled.Links>
                 </Styled.LeftSection>
-                <Styled.RightSection>
+                {/* <Styled.RightSection>
                     <div><Link to="/login">Login</Link></div>
-                </Styled.RightSection>
+                </Styled.RightSection> */}
             </Styled.NavContainer>
         </Styled.PageNavigation>
     )

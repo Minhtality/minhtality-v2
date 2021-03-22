@@ -1,11 +1,13 @@
-import React from 'react'
+import React from 'react';
 
-const HomepageHero = () => {
+const HomepageHero = ({
+    heading
+}) => {
     return (
         <div>
-            This is the home page
+            {heading}
         </div>
     )
 }
 
-export default HomepageHero
+export default HomepageHero;
