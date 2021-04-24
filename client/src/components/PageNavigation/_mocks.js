@@ -4,18 +4,18 @@ export default {
         brand: 'Minhtality',
         links: [
             {
-                text: 'Text1',
-                href: '#href1',
+                text: 'Projects',
+                href: '#',
                 target: '_self',
             },
             {
-                text: 'Text2',
-                href: '#href2',
+                text: 'Resume',
+                href: '#',
                 target: '_self',
             },
             {
-                text: 'Text3',
-                href: '#href3',
+                text: 'Contact',
+                href: '#',
                 target: '_self',
             },
         ]

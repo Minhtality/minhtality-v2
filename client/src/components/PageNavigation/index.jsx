@@ -23,9 +23,13 @@ const PageNavigation = ({
                     </Styled.Brand>
                 </Styled.LeftSection>
                 <Styled.RightSection>
-                    {links.map(link => (
-                        <li>{link.text}</li>
-                    ))}
+                    {links && 
+                        <Styled.Links>
+                            {links.map(link => (
+                                <a href={link.href} target={link.target}>{link.text}</a>
+                            ))}
+                        </Styled.Links>
+                    }
                 </Styled.RightSection>
             </Styled.NavContainer>
         </Styled.PageNavigation>

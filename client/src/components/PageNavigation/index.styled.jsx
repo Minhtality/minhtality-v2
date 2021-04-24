@@ -15,15 +15,14 @@ export const NavContainer = styled.div`
     max-width: 1200px;
     width: 100%;
     align-items: center;
-    /* border-bottom: 1px solid rgb(226, 226, 226); */
-    padding: 15px 20px;
+    padding: 15px 0;
     &:after {
         content: '';
         position: absolute;
         background-color: rgb(226, 226, 226);
         height: 1px;
         bottom: 0;
-        width: calc(100% - 40px);
+        width: 100%;
     }
 `;
 export const LeftSection = styled.div`
@@ -49,7 +48,13 @@ export const BrandButton = styled.a`
 export const Links = styled.ul`
     display: flex;
     list-style: none;
-    li {
-        margin-right: 25px;
+    font-size: 20px;
+    line-height: 11px;
+    padding: 0;
+    a {
+        margin-left: 22px;
+        cursor: pointer;
+        text-decoration: none;
+        color: inherit;
     }
 `;
