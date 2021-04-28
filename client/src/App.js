@@ -20,9 +20,9 @@ function App() {
             {/* Page container */}
             <Switch>
               <Route exact path='/' component={HomepageHero} />
-              <Route exact path='/pokemon' component={PokemonPage} />
+              {/* <Route exact path='/pokemon' component={PokemonPage} />
               <Route exact path='/login' component={LoginPage} />
-              <Route exact path='/contacts' component={ContactsModule} />
+              <Route exact path='/contacts' component={ContactsModule} /> */}
             </Switch>
           </div>
         </>
