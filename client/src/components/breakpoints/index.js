@@ -1,4 +1,4 @@
-import { createBreakpoints } from '../../packages/breakpoints';
+import { createBreakpoints } from '../packages/breakpoints';
 
 export const {
   useMobileBreakpoint,
