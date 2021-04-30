@@ -22,10 +22,10 @@ const Resume = () => {
                         <span>Los Anegles</span>
                     </p>
                     <div>
-                        <a href="">email</a>
-                        <a href="">website</a>
-                        <a href="">github</a>
-                        <a href="">linkedin</a>
+                        <a href="#">email</a>
+                        <a href="#">website</a>
+                        <a href="#">github</a>
+                        <a href="#">linkedin</a>
                     </div>
                 </Styled.Header>
                 <Styled.AboutMe>
@@ -37,7 +37,11 @@ const Resume = () => {
                         Bacon ipsum dolor amet landjaeger ball tip tongue brisket kevin chislic corned beef pancetta pork chop leberkas beef ribs. Jerky ground round ham turducken prosciutto bresaola.
                     </p>
                 </Styled.AboutMe>
-                <Styled.ShowCase>Showcase here</Styled.ShowCase>
+                <Styled.ShowCase>
+                    <div>EXPERIENCE</div>
+                    <div>PROJECTS</div>
+                    <div>EDUCATION</div>
+                </Styled.ShowCase>
             </Styled.Main>
         </Styled.ResumeContainer>
     )

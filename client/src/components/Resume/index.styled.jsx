@@ -11,7 +11,7 @@ export const SideBar = styled.div`
     color: #fff;
 `;
 export const Main = styled.div`
-    width: calc(75% - 7%);
+    width: calc(75% - 14%);
     padding: 0 7%;
     max-width: 1200px;
 `;
