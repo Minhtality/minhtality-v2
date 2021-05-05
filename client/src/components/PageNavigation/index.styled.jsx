@@ -7,6 +7,7 @@ export const PageNavigation = styled.div`
 `;
 
 export const NavContainer = styled.div`
+   
     position: relative;
     display: flex;
     justify-items: center;
