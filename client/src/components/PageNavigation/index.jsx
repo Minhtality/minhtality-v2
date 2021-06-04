@@ -26,7 +26,7 @@ const PageNavigation = ({
                     {links && 
                         <Styled.Links>
                             {links.map(link => (
-                                <a href={link.href} target={link.target}>{link.text}1</a>
+                                <a href={link.href} target={link.target}>{link.text}</a>
                             ))}
                         </Styled.Links>
                     }
