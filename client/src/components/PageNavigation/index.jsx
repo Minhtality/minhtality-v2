@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types';
-import Styled from './index.styled';
+import * as Styled from './index.styled';
+import { Menu, MenuItem } from '@material-ui/core';
 import {Link} from 'react-router-dom';
 
 const PageNavigation = ({
-    title = 'Home',
-    theme = 'LightMode',
-    icon
+    brand = '',
+    links = [],
 }) => {
 
     const [showDropdown, setDropdown] =  useState(false);
@@ -18,24 +18,18 @@ const PageNavigation = ({
         <Styled.PageNavigation>
             <Styled.NavContainer>
                 <Styled.LeftSection>
-                    <Styled.Title>Minh</Styled.Title>
-                    <Styled.Links>
-                        <li>
-                            <Link to="/">Home</Link>
-                        </li>
-                        <div onClick={toggleDropdown}>
-                            <li>Projects</li>
-                            {showDropdown && 
-                                <div>
-                                    <Link to="/pokemon">Pokemon</Link>
-                                    <Link to="/contacts">Contacts</Link>
-                                </div>
-                            }
-                        </div>
-                    </Styled.Links>
+                    <Styled.Brand >
+                        <Styled.BrandButton href='#' target="_self">{brand}</Styled.BrandButton>
+                    </Styled.Brand>
                 </Styled.LeftSection>
                 <Styled.RightSection>
-                    <div><Link to="/login">Login</Link></div>
+                    {links && 
+                        <Styled.Links>
+                            {links.map(link => (
+                                <a href={link.href} target={link.target}>{link.text}</a>
+                            ))}
+                        </Styled.Links>
+                    }
                 </Styled.RightSection>
             </Styled.NavContainer>
         </Styled.PageNavigation>
@@ -51,4 +45,4 @@ PageNavigation.propTypes = {
     icon: PropTypes.string
 }
 
-export default PageNavigation
+export default PageNavigation;
